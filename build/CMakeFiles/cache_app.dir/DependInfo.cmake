@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/z004ws2v/OneDrive - Siemens AG/Desktop/Rahul/projects/MultiLevelCacheEngine/multi-level-cache/src/cache/cache_level.cpp" "CMakeFiles/cache_app.dir/src/cache/cache_level.cpp.obj" "gcc" "CMakeFiles/cache_app.dir/src/cache/cache_level.cpp.obj.d"
   "C:/Users/z004ws2v/OneDrive - Siemens AG/Desktop/Rahul/projects/MultiLevelCacheEngine/multi-level-cache/src/cache/multi_level_cache.cpp" "CMakeFiles/cache_app.dir/src/cache/multi_level_cache.cpp.obj" "gcc" "CMakeFiles/cache_app.dir/src/cache/multi_level_cache.cpp.obj.d"
+  "C:/Users/z004ws2v/OneDrive - Siemens AG/Desktop/Rahul/projects/MultiLevelCacheEngine/multi-level-cache/src/eviction/lfu_policy.cpp" "CMakeFiles/cache_app.dir/src/eviction/lfu_policy.cpp.obj" "gcc" "CMakeFiles/cache_app.dir/src/eviction/lfu_policy.cpp.obj.d"
   "C:/Users/z004ws2v/OneDrive - Siemens AG/Desktop/Rahul/projects/MultiLevelCacheEngine/multi-level-cache/src/eviction/lru_policy.cpp" "CMakeFiles/cache_app.dir/src/eviction/lru_policy.cpp.obj" "gcc" "CMakeFiles/cache_app.dir/src/eviction/lru_policy.cpp.obj.d"
   "C:/Users/z004ws2v/OneDrive - Siemens AG/Desktop/Rahul/projects/MultiLevelCacheEngine/multi-level-cache/src/main.cpp" "CMakeFiles/cache_app.dir/src/main.cpp.obj" "gcc" "CMakeFiles/cache_app.dir/src/main.cpp.obj.d"
   )

@@ -1,0 +1,7 @@
+{
+  "levels": [
+    { "capacity": 2, "policy": "LRU" },
+    { "capacity": 2, "policy": "LFU" },
+    { "capacity": 2, "policy": "LRU" }
+  ]
+}

@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/cache_app.dir/src/cache/cache_level.cpp.obj.d"
   "CMakeFiles/cache_app.dir/src/cache/multi_level_cache.cpp.obj"
   "CMakeFiles/cache_app.dir/src/cache/multi_level_cache.cpp.obj.d"
+  "CMakeFiles/cache_app.dir/src/eviction/lfu_policy.cpp.obj"
+  "CMakeFiles/cache_app.dir/src/eviction/lfu_policy.cpp.obj.d"
   "CMakeFiles/cache_app.dir/src/eviction/lru_policy.cpp.obj"
   "CMakeFiles/cache_app.dir/src/eviction/lru_policy.cpp.obj.d"
   "CMakeFiles/cache_app.dir/src/main.cpp.obj"

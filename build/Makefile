@@ -128,12 +128,50 @@ cache_app/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_app.dir\build.make CMakeFiles/cache_app.dir/build
 .PHONY : cache_app/fast
 
+#=============================================================================
+# Target rules for targets named cache_benchmark
+
+# Build rule for target.
+cache_benchmark: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 cache_benchmark
+.PHONY : cache_benchmark
+
+# fast build rule for target.
+cache_benchmark/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_benchmark.dir\build.make CMakeFiles/cache_benchmark.dir/build
+.PHONY : cache_benchmark/fast
+
+benchmarks/benchmark.obj: benchmarks/benchmark.cpp.obj
+.PHONY : benchmarks/benchmark.obj
+
+# target to build an object file
+benchmarks/benchmark.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_benchmark.dir\build.make CMakeFiles/cache_benchmark.dir/benchmarks/benchmark.cpp.obj
+.PHONY : benchmarks/benchmark.cpp.obj
+
+benchmarks/benchmark.i: benchmarks/benchmark.cpp.i
+.PHONY : benchmarks/benchmark.i
+
+# target to preprocess a source file
+benchmarks/benchmark.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_benchmark.dir\build.make CMakeFiles/cache_benchmark.dir/benchmarks/benchmark.cpp.i
+.PHONY : benchmarks/benchmark.cpp.i
+
+benchmarks/benchmark.s: benchmarks/benchmark.cpp.s
+.PHONY : benchmarks/benchmark.s
+
+# target to generate assembly for a file
+benchmarks/benchmark.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_benchmark.dir\build.make CMakeFiles/cache_benchmark.dir/benchmarks/benchmark.cpp.s
+.PHONY : benchmarks/benchmark.cpp.s
+
 src/cache/cache_level.obj: src/cache/cache_level.cpp.obj
 .PHONY : src/cache/cache_level.obj
 
 # target to build an object file
 src/cache/cache_level.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_app.dir\build.make CMakeFiles/cache_app.dir/src/cache/cache_level.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_benchmark.dir\build.make CMakeFiles/cache_benchmark.dir/src/cache/cache_level.cpp.obj
 .PHONY : src/cache/cache_level.cpp.obj
 
 src/cache/cache_level.i: src/cache/cache_level.cpp.i
@@ -142,6 +180,7 @@ src/cache/cache_level.i: src/cache/cache_level.cpp.i
 # target to preprocess a source file
 src/cache/cache_level.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_app.dir\build.make CMakeFiles/cache_app.dir/src/cache/cache_level.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_benchmark.dir\build.make CMakeFiles/cache_benchmark.dir/src/cache/cache_level.cpp.i
 .PHONY : src/cache/cache_level.cpp.i
 
 src/cache/cache_level.s: src/cache/cache_level.cpp.s
@@ -150,6 +189,7 @@ src/cache/cache_level.s: src/cache/cache_level.cpp.s
 # target to generate assembly for a file
 src/cache/cache_level.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_app.dir\build.make CMakeFiles/cache_app.dir/src/cache/cache_level.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_benchmark.dir\build.make CMakeFiles/cache_benchmark.dir/src/cache/cache_level.cpp.s
 .PHONY : src/cache/cache_level.cpp.s
 
 src/cache/multi_level_cache.obj: src/cache/multi_level_cache.cpp.obj
@@ -158,6 +198,7 @@ src/cache/multi_level_cache.obj: src/cache/multi_level_cache.cpp.obj
 # target to build an object file
 src/cache/multi_level_cache.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_app.dir\build.make CMakeFiles/cache_app.dir/src/cache/multi_level_cache.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_benchmark.dir\build.make CMakeFiles/cache_benchmark.dir/src/cache/multi_level_cache.cpp.obj
 .PHONY : src/cache/multi_level_cache.cpp.obj
 
 src/cache/multi_level_cache.i: src/cache/multi_level_cache.cpp.i
@@ -166,6 +207,7 @@ src/cache/multi_level_cache.i: src/cache/multi_level_cache.cpp.i
 # target to preprocess a source file
 src/cache/multi_level_cache.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_app.dir\build.make CMakeFiles/cache_app.dir/src/cache/multi_level_cache.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_benchmark.dir\build.make CMakeFiles/cache_benchmark.dir/src/cache/multi_level_cache.cpp.i
 .PHONY : src/cache/multi_level_cache.cpp.i
 
 src/cache/multi_level_cache.s: src/cache/multi_level_cache.cpp.s
@@ -174,7 +216,35 @@ src/cache/multi_level_cache.s: src/cache/multi_level_cache.cpp.s
 # target to generate assembly for a file
 src/cache/multi_level_cache.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_app.dir\build.make CMakeFiles/cache_app.dir/src/cache/multi_level_cache.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_benchmark.dir\build.make CMakeFiles/cache_benchmark.dir/src/cache/multi_level_cache.cpp.s
 .PHONY : src/cache/multi_level_cache.cpp.s
+
+src/eviction/lfu_policy.obj: src/eviction/lfu_policy.cpp.obj
+.PHONY : src/eviction/lfu_policy.obj
+
+# target to build an object file
+src/eviction/lfu_policy.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_app.dir\build.make CMakeFiles/cache_app.dir/src/eviction/lfu_policy.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_benchmark.dir\build.make CMakeFiles/cache_benchmark.dir/src/eviction/lfu_policy.cpp.obj
+.PHONY : src/eviction/lfu_policy.cpp.obj
+
+src/eviction/lfu_policy.i: src/eviction/lfu_policy.cpp.i
+.PHONY : src/eviction/lfu_policy.i
+
+# target to preprocess a source file
+src/eviction/lfu_policy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_app.dir\build.make CMakeFiles/cache_app.dir/src/eviction/lfu_policy.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_benchmark.dir\build.make CMakeFiles/cache_benchmark.dir/src/eviction/lfu_policy.cpp.i
+.PHONY : src/eviction/lfu_policy.cpp.i
+
+src/eviction/lfu_policy.s: src/eviction/lfu_policy.cpp.s
+.PHONY : src/eviction/lfu_policy.s
+
+# target to generate assembly for a file
+src/eviction/lfu_policy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_app.dir\build.make CMakeFiles/cache_app.dir/src/eviction/lfu_policy.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_benchmark.dir\build.make CMakeFiles/cache_benchmark.dir/src/eviction/lfu_policy.cpp.s
+.PHONY : src/eviction/lfu_policy.cpp.s
 
 src/eviction/lru_policy.obj: src/eviction/lru_policy.cpp.obj
 .PHONY : src/eviction/lru_policy.obj
@@ -182,6 +252,7 @@ src/eviction/lru_policy.obj: src/eviction/lru_policy.cpp.obj
 # target to build an object file
 src/eviction/lru_policy.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_app.dir\build.make CMakeFiles/cache_app.dir/src/eviction/lru_policy.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_benchmark.dir\build.make CMakeFiles/cache_benchmark.dir/src/eviction/lru_policy.cpp.obj
 .PHONY : src/eviction/lru_policy.cpp.obj
 
 src/eviction/lru_policy.i: src/eviction/lru_policy.cpp.i
@@ -190,6 +261,7 @@ src/eviction/lru_policy.i: src/eviction/lru_policy.cpp.i
 # target to preprocess a source file
 src/eviction/lru_policy.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_app.dir\build.make CMakeFiles/cache_app.dir/src/eviction/lru_policy.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_benchmark.dir\build.make CMakeFiles/cache_benchmark.dir/src/eviction/lru_policy.cpp.i
 .PHONY : src/eviction/lru_policy.cpp.i
 
 src/eviction/lru_policy.s: src/eviction/lru_policy.cpp.s
@@ -198,6 +270,7 @@ src/eviction/lru_policy.s: src/eviction/lru_policy.cpp.s
 # target to generate assembly for a file
 src/eviction/lru_policy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_app.dir\build.make CMakeFiles/cache_app.dir/src/eviction/lru_policy.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_benchmark.dir\build.make CMakeFiles/cache_benchmark.dir/src/eviction/lru_policy.cpp.s
 .PHONY : src/eviction/lru_policy.cpp.s
 
 src/main.obj: src/main.cpp.obj
@@ -233,12 +306,19 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... cache_app
+	@echo ... cache_benchmark
+	@echo ... benchmarks/benchmark.obj
+	@echo ... benchmarks/benchmark.i
+	@echo ... benchmarks/benchmark.s
 	@echo ... src/cache/cache_level.obj
 	@echo ... src/cache/cache_level.i
 	@echo ... src/cache/cache_level.s
 	@echo ... src/cache/multi_level_cache.obj
 	@echo ... src/cache/multi_level_cache.i
 	@echo ... src/cache/multi_level_cache.s
+	@echo ... src/eviction/lfu_policy.obj
+	@echo ... src/eviction/lfu_policy.i
+	@echo ... src/eviction/lfu_policy.s
 	@echo ... src/eviction/lru_policy.obj
 	@echo ... src/eviction/lru_policy.i
 	@echo ... src/eviction/lru_policy.s

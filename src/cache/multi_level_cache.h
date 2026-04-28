@@ -9,9 +9,9 @@ class MultiLevelCache {
         void removeFromAllLevels(int key);
         void promoteToTopLevel(int key, int value, int levelIdx);
     public:
-        MultiLevelCache(const std::vector<int> &capacity);
+        MultiLevelCache(const std::vector<int> &capacity, const std::vector<EvictionPolicy*> &policies);
 
         int get(int key);
         void put(int key, int value);
-
+        void printMetrics();
 };

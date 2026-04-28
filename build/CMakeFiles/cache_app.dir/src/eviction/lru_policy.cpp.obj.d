@@ -1,6 +1,7 @@
 CMakeFiles/cache_app.dir/src/eviction/lru_policy.cpp.obj: \
  C:\Users\z004ws2v\OneDrive\ -\ Siemens\ AG\Desktop\Rahul\projects\MultiLevelCacheEngine\multi-level-cache\src\eviction\lru_policy.cpp \
  C:\Users\z004ws2v\OneDrive\ -\ Siemens\ AG\Desktop\Rahul\projects\MultiLevelCacheEngine\multi-level-cache\src\eviction\lru_policy.h \
+ C:\Users\z004ws2v\OneDrive\ -\ Siemens\ AG\Desktop\Rahul\projects\MultiLevelCacheEngine\multi-level-cache\src\eviction\eviction_policy.h \
  C:/msys64/ucrt64/include/c++/15.2.0/unordered_map \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/requires_hosted.h \
  C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -62,4 +63,8 @@ CMakeFiles/cache_app.dir/src/eviction/lru_policy.cpp.obj: \
  C:/msys64/ucrt64/include/_mingw_secapi.h \
  C:/msys64/ucrt64/include/vadefs.h \
  C:/msys64/ucrt64/include/sdks/_mingw_ddk.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator_args.h
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator_args.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/list \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_list.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/allocated_ptr.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/list.tcc

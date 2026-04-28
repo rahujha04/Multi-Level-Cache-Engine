@@ -63,10 +63,12 @@ CMAKE_BINARY_DIR = "C:\Users\z004ws2v\OneDrive - Siemens AG\Desktop\Rahul\projec
 
 # The main recursive "all" target.
 all: CMakeFiles/cache_app.dir/all
+all: CMakeFiles/cache_benchmark.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/cache_app.dir/codegen
+codegen: CMakeFiles/cache_benchmark.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,6 +77,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/cache_app.dir/clean
+clean: CMakeFiles/cache_benchmark.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -84,12 +87,12 @@ clean: CMakeFiles/cache_app.dir/clean
 CMakeFiles/cache_app.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_app.dir\build.make CMakeFiles/cache_app.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_app.dir\build.make CMakeFiles/cache_app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\z004ws2v\OneDrive - Siemens AG\Desktop\Rahul\projects\MultiLevelCacheEngine\multi-level-cache\build\CMakeFiles" --progress-num=1,2,3,4,5 "Built target cache_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\z004ws2v\OneDrive - Siemens AG\Desktop\Rahul\projects\MultiLevelCacheEngine\multi-level-cache\build\CMakeFiles" --progress-num=1,2,3,4,5,6 "Built target cache_app"
 .PHONY : CMakeFiles/cache_app.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/cache_app.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\z004ws2v\OneDrive - Siemens AG\Desktop\Rahul\projects\MultiLevelCacheEngine\multi-level-cache\build\CMakeFiles" 5
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\z004ws2v\OneDrive - Siemens AG\Desktop\Rahul\projects\MultiLevelCacheEngine\multi-level-cache\build\CMakeFiles" 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/cache_app.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\z004ws2v\OneDrive - Siemens AG\Desktop\Rahul\projects\MultiLevelCacheEngine\multi-level-cache\build\CMakeFiles" 0
 .PHONY : CMakeFiles/cache_app.dir/rule
@@ -101,13 +104,45 @@ cache_app: CMakeFiles/cache_app.dir/rule
 # codegen rule for target.
 CMakeFiles/cache_app.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_app.dir\build.make CMakeFiles/cache_app.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\z004ws2v\OneDrive - Siemens AG\Desktop\Rahul\projects\MultiLevelCacheEngine\multi-level-cache\build\CMakeFiles" --progress-num=1,2,3,4,5 "Finished codegen for target cache_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\z004ws2v\OneDrive - Siemens AG\Desktop\Rahul\projects\MultiLevelCacheEngine\multi-level-cache\build\CMakeFiles" --progress-num=1,2,3,4,5,6 "Finished codegen for target cache_app"
 .PHONY : CMakeFiles/cache_app.dir/codegen
 
 # clean rule for target.
 CMakeFiles/cache_app.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_app.dir\build.make CMakeFiles/cache_app.dir/clean
 .PHONY : CMakeFiles/cache_app.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/cache_benchmark.dir
+
+# All Build rule for target.
+CMakeFiles/cache_benchmark.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_benchmark.dir\build.make CMakeFiles/cache_benchmark.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_benchmark.dir\build.make CMakeFiles/cache_benchmark.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\z004ws2v\OneDrive - Siemens AG\Desktop\Rahul\projects\MultiLevelCacheEngine\multi-level-cache\build\CMakeFiles" --progress-num=7,8,9,10,11,12 "Built target cache_benchmark"
+.PHONY : CMakeFiles/cache_benchmark.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/cache_benchmark.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\z004ws2v\OneDrive - Siemens AG\Desktop\Rahul\projects\MultiLevelCacheEngine\multi-level-cache\build\CMakeFiles" 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/cache_benchmark.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\z004ws2v\OneDrive - Siemens AG\Desktop\Rahul\projects\MultiLevelCacheEngine\multi-level-cache\build\CMakeFiles" 0
+.PHONY : CMakeFiles/cache_benchmark.dir/rule
+
+# Convenience name for target.
+cache_benchmark: CMakeFiles/cache_benchmark.dir/rule
+.PHONY : cache_benchmark
+
+# codegen rule for target.
+CMakeFiles/cache_benchmark.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_benchmark.dir\build.make CMakeFiles/cache_benchmark.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\z004ws2v\OneDrive - Siemens AG\Desktop\Rahul\projects\MultiLevelCacheEngine\multi-level-cache\build\CMakeFiles" --progress-num=7,8,9,10,11,12 "Finished codegen for target cache_benchmark"
+.PHONY : CMakeFiles/cache_benchmark.dir/codegen
+
+# clean rule for target.
+CMakeFiles/cache_benchmark.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cache_benchmark.dir\build.make CMakeFiles/cache_benchmark.dir/clean
+.PHONY : CMakeFiles/cache_benchmark.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

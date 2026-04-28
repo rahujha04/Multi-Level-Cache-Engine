@@ -1,8 +1,12 @@
 #include "multi_level_cache.h"
 
-MultiLevelCache::MultiLevelCache(const std::vector<int> &capacity) {
-    for (int i = 0; i < static_cast<int>(capacity.size()); i++) {
-        levels.push_back(new CacheLevel(capacity[i]));
+#include "multi_level_cache.h"
+#include "eviction/lru_policy.h"
+#include "eviction/lfu_policy.h"
+
+MultiLevelCache::MultiLevelCache(const std::vector<int> &capacities, const std::vector<EvictionPolicy*> &policies) {
+    for (int i = 0; i < capacities.size(); i++) {
+        levels.push_back(new CacheLevel(capacities[i], policies[i]));
     }
 }
 
@@ -43,5 +47,11 @@ void MultiLevelCache::put(int key, int value) {
     for (int i = 1; i < levels.size(); i++) {
         if (evicted.first == -1) break;
         evicted = levels[i]->put(evicted.first, evicted.second);
+    }
+}
+
+void MultiLevelCache::printMetrics() {
+    for (int i = 0; i < levels.size(); i++) {
+        levels[i]->printMetrics(i);
     }
 }
